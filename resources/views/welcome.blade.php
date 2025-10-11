@@ -13,5 +13,8 @@
     <a href="{{ route('inspire') }}">inspire</a>
     <br>
     <a href="{{ route('Brawl') }}">brawlperso</a>
+    <br>
+    <a href="{{ route('estudiantes.index') }}">estudiantes</a>
+    <br>
 </body>
 </html>
