@@ -6,15 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{{ route('Saludos') }}">Saludos</a>
-    <br>
-    <a href="{{ route('Bienvenidos') }}">Bienvenidos</a>
-    <br>
-    <a href="{{ route('inspire') }}">inspire</a>
-    <br>
-    <a href="{{ route('Brawl') }}">brawlperso</a>
-    <br>
-    <a href="{{ route('estudiantes.index') }}">estudiantes</a>
-    <br>
+    
+    <a href="{{ route('proveedores.index') }}">proveedores</a>
 </body>
 </html>

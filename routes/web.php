@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use App\Models\Estudiante;
+use App\Models\Proveedor;
 
 use App\Http\Controllers\Estudiantes\EstudiantesController;
+use App\Http\Controllers\Proveedores\ProveedoresController;
 
 
 
@@ -14,15 +16,20 @@ Route::get('/', function () {
     $estudiante->nombres = 'Jose';
     $estudiante->pri_ape = 'Sanchez';
     $estudiante->seg_ape = 'Carrion';
-    $estudiante->save();
+    $estudiante->save();*/
+    $provedor = new Proveedor();
+    $proovedor->nombre = 'Jose';
+    $proovedor->save();
 
-    return $estudiante;*/
+    return $proovedor;
+    //return $estudiante;
     //return 'Aqui trabajaremos con la tabla estudiantes';
-    return view('welcome');
+    //return view('welcome');
 });
 
 
-Route::get('/saludo', function () {
+
+/*Route::get('/saludo', function () {
     return ('greeting');
 })->name('Saludos');
 
@@ -39,3 +46,5 @@ Route::get('/brawlperso', function () {
 })->name('Brawl');
 
 Route::get('/estudiantes/index', [EstudiantesController::class, 'index'])->name('estudiantes.index');
+
+Route::get('/proveedores/index', [ProveedoresController::class, 'index'])->name('proveedores.index');*/
